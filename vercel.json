@@ -4,11 +4,6 @@
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.6.0" }
     },
-    "rewrites": [
-        { "source": "/js/(.*)", "destination": "/public/build/js/$1" },
-        { "source": "/css/(.*)", "destination": "/public/build/css/$1" },
-        { "source": "/images/(.*)", "destination": "/public/build/images/$1" }
-    ],
     "routes": [
         {
             "src": "/(.*)",
@@ -18,7 +13,7 @@
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "https://your.url.from.vercel.app",
+        "APP_URL": "https://deploy-test-laravel.vercel.app",
         "APP_KEY": "base64:q706QaqR6Qv1Z1qFR8OobuTgYtTWqIAj+LojPYCVEnI=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
