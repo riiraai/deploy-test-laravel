@@ -4,6 +4,11 @@
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.6.0" }
     },
+    "rewrites": [
+        { "source": "/js/(.*)", "destination": "/public/build/js/$1" },
+        { "source": "/css/(.*)", "destination": "/public/build/css/$1" },
+        { "source": "/images/(.*)", "destination": "/public/build/images/$1" }
+    ],
     "routes": [
         {
             "src": "/(.*)",
